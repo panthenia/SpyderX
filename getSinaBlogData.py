@@ -21,7 +21,7 @@ def decodeResponseData(response):
     if decodeType == 'gzip':
         return gzip.decompress(response.read()).decode()
 
-
+#define
 def requestUrl(url):
     requestTarget = urllib.request.Request(url=url,
                                            headers=request_header, method='GET')
